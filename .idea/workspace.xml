@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d7c9b7c-4462-4fdb-a734-8b55fc56c919" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/awesome_nested_set_spec.rb" afterPath="$PROJECT_DIR$/spec/awesome_nested_set_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/awesome_nested_set/helper_spec.rb" afterPath="$PROJECT_DIR$/spec/awesome_nested_set/helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/db/schema.rb" afterPath="$PROJECT_DIR$/spec/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+    <list default="true" id="4d7c9b7c-4462-4fdb-a734-8b55fc56c919" name="Default" comment="changes in">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" afterPath="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" afterPath="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="awesome_nested_set.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +32,11 @@
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_remove_200_nodes_inline_from_bottom__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to remove 200 nodes inline from bottom: awesome_nested_set Coverage Results" MODIFIED="1436176970017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_moving_node_from_one_scoped_tree_to_another_moves_single_node_correctly__awesome_nested_set.coverage" NAME="AwesomeNestedSet moving node from one scoped tree to another moves single node correctly: awesome_nested_set Coverage Results" MODIFIED="1436163895927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_Takes_time_to_move_to_child_more_than_once_per_parent_rebuild__awesome_nested_set.coverage" NAME="AwesomeNestedSet Takes time to move_to_child_more_than_once_per_parent_rebuild: awesome_nested_set Coverage Results" MODIFIED="1436174207299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437641227259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_one_root_rest_children_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set Coverage Results" MODIFIED="1437631053116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_get_roots__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to get roots: awesome_nested_set Coverage Results" MODIFIED="1436182815946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_build_200_nodes_inline__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to build 200 nodes inline: awesome_nested_set Coverage Results" MODIFIED="1436176131041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437641227259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_full_binary_tree_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_full_binary_tree_spec': awesome_nested_set Coverage Results" MODIFIED="1436538949801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_build_200_nodes_inline__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to build 200 nodes inline: awesome_nested_set Coverage Results" MODIFIED="1436176131041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_get_roots__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to get roots: awesome_nested_set Coverage Results" MODIFIED="1436182815946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__users_spec___awesome_nested_set.coverage" NAME="Run spec 'users_spec': awesome_nested_set Coverage Results" MODIFIED="1435760059104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_1000000_in_line_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_1000000_in_line_spec': awesome_nested_set Coverage Results" MODIFIED="1436855293613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_moving_node_from_one_scoped_tree_to_another__awesome_nested_set.coverage" NAME="AwesomeNestedSet moving node from one scoped tree to another: awesome_nested_set Coverage Results" MODIFIED="1435817603149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
@@ -70,11 +64,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_255_full_binary_tree_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="awesome_255_full_binary_tree_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.579021" vertical-offset="0" max-vertical-offset="9504">
+            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="7002">
               <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flat_excel_printer.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2196">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize_flat_excel_printer.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9616027" vertical-offset="0" max-vertical-offset="2268">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -83,7 +97,7 @@
       <file leaf-file-name="awesome_nested_set_100000_in_line_fast_seed_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1620">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -103,7 +117,7 @@
       <file leaf-file-name="awesome_nested_set_full_binary_tree_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+            <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1656">
               <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
               <folding />
             </state>
@@ -133,7 +147,7 @@
       <file leaf-file-name="awesome_nested_set_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7992">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="7992">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
@@ -164,6 +178,8 @@
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_1000000_in_line_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" />
+        <option value="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" />
       </list>
     </option>
   </component>
@@ -171,9 +187,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2912" />
+    <option name="x" value="1985" />
     <option name="y" value="24" />
-    <option name="width" value="927" />
+    <option name="width" value="1855" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -753,16 +769,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2912" y="24" width="927" height="1056" extended-state="4" />
+    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18494624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3434238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52099884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5273632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -801,6 +817,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1530">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1602">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="7992">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/awesome_nested_set_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22536">
@@ -840,13 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1242">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="1476">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -969,23 +1002,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2196">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.5/bin/rspec">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65346533" vertical-offset="0" max-vertical-offset="606">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/debug.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/awesome_nested_set/columns.rb">
@@ -1044,13 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2268">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="756">
@@ -1062,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.8125" vertical-offset="1750" max-vertical-offset="2646">
           <caret line="120" column="6" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
@@ -1073,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.5" vertical-offset="0" max-vertical-offset="11592">
           <caret line="231" column="63" selection-start-line="231" selection-start-column="63" selection-end-line="231" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5714285" vertical-offset="1224" max-vertical-offset="1980">
           <caret line="2" column="8" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23809524" vertical-offset="90" max-vertical-offset="1926">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,8 +1168,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.579021" vertical-offset="0" max-vertical-offset="9504">
+        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="7002">
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2196">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9616027" vertical-offset="0" max-vertical-offset="2268">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding />
         </state>
       </provider>

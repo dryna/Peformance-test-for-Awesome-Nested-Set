@@ -30,7 +30,7 @@ module ExcelPrinter
         path = output.respond_to?(:path) ? output.path : output.to_s
         File.delete path
         workbook.write path
-      rescue RuntimeError
+      rescue StandardError
         workbook = Spreadsheet::Workbook.new
         print_threads(workbook)
         # Spreadsheet::Workbook#write seems to need a file path,

@@ -7,38 +7,36 @@ require 'spreadsheet'
 require 'support/flat_excel_printer'
 
 describe "AwesomeNestedSet" do
-  before(:all) do
-    self.class.fixtures :categories
-  end
 
   describe "process time" do
     before(:each) do
       RubyProf.measure_mode = RubyProf::PROCESS_TIME
       @test_nodes = []
+      @n = 10000
       Category.delete_all
-      left = 0
-      right = 200001
-      records =""
-      records+="(#{1}, 'name#{1}',null,#{left},#{right}),"
-      left+=1
-      right-=1
-      (2..1000000).to_a.each do |i|
-        records+="(#{i}, 'name#{i}',#{i-1},#{left},#{right}),"
-        left+=1
-        right-=1
+      (1..@n).to_a.each do |i|
+        @test_nodes[i] = Category.create(id: i, name: "name#{i}")
         p i
       end
-      #ActiveRecord::Base.logger = Logger.new(STDOUT) if defined?(ActiveRecord::Base)
-      records=records.gsub(/,$/, '')
-      ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
     end
 
     it "It takes time to build 200 nodes inline as_children" do
+      RubyProf.measure_mode = RubyProf::WALL_TIME
+      result=RubyProf.profile do
+        (2..@n).to_a.each do |i|
+          @test_nodes[i].move_to_child_of(@test_nodes[i-1])
+        end
+      end
 
-      last_node = Category.find_by_id(1000000)
+
+      printer = ExcelPrinter::FlatExcelPrinter.new(result)
+      printer.print('tmp/report_add_ancestor_wall_time.xls')
+
+      RubyProf.measure_mode = RubyProf::PROCESS_TIME
+
       20.times do
         result=RubyProf.profile do
-          last_node.ancestors
+          @test_nodes[@n].ancestors
         end
 
 
@@ -60,7 +58,7 @@ describe "AwesomeNestedSet" do
 
       20.times do
         result=RubyProf.profile do
-          last_node.ancestors
+          @test_nodes[@n].ancestors
         end
 
 
@@ -77,8 +75,6 @@ describe "AwesomeNestedSet" do
         printer = ExcelPrinter::FlatExcelPrinter.new(result)
         printer.print('tmp/report_get_roots_wall_time.xls')
       end
-
-
     end
   end
 end

@@ -7,40 +7,38 @@ require 'spreadsheet'
 require 'support/flat_excel_printer'
 
 describe "AwesomeNestedSet" do
+  before(:all) do
+    self.class.fixtures :categories
+  end
 
   describe "process time" do
     before(:each) do
       RubyProf.measure_mode = RubyProf::PROCESS_TIME
+      @n = 1000000
       @test_nodes = []
-      @n = 8191 #255 1023 8191 65535 131071 1048575
       Category.delete_all
-      (1..@n).to_a.each do |i|
-        @test_nodes[i] = Category.create(id: i, name: "name#{i}")
+      left = 0
+      right = @n*2+1
+      records =""
+      records+="(#{1}, 'name#{1}',null,#{left},#{right}),"
+      left+=1
+      right-=1
+      (2..@n).to_a.each do |i|
+        records+="(#{i}, 'name#{i}',#{i-1},#{left},#{right}),"
+        left+=1
+        right-=1
         p i
       end
+      records=records.gsub(/,$/, '')
+      ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
     end
 
     it "It takes time to build 200 nodes inline as_children" do
-      RubyProf.measure_mode = RubyProf::WALL_TIME
-      #ActiveRecord::Base.logger = Logger.new(STDOUT) if defined?(ActiveRecord::Base)
-      z= 2
-      result=RubyProf.profile do
-        (1..((@n/2))).to_a.each do |i|
-          @test_nodes[z].move_to_child_of(@test_nodes[i])
-          @test_nodes[z+1].move_to_child_of(@test_nodes[i])
-          z+=2
-        end
-      end
 
-
-      printer = ExcelPrinter::FlatExcelPrinter.new(result)
-      printer.print('tmp/report_add_ancestor_wall_time.xls')
-
-      RubyProf.measure_mode = RubyProf::PROCESS_TIME
-
+      last_node = Category.find_by_id(@n)
       20.times do
         result=RubyProf.profile do
-          @test_nodes[@n].ancestors
+          last_node.ancestors
         end
 
 
@@ -62,7 +60,7 @@ describe "AwesomeNestedSet" do
 
       20.times do
         result=RubyProf.profile do
-          @test_nodes[@n].ancestors
+          last_node.ancestors
         end
 
 
@@ -79,8 +77,6 @@ describe "AwesomeNestedSet" do
         printer = ExcelPrinter::FlatExcelPrinter.new(result)
         printer.print('tmp/report_get_roots_wall_time.xls')
       end
-
-
     end
   end
 end

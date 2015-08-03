@@ -23,7 +23,6 @@ describe "AwesomeNestedSet" do
         left+=1
         p i
       end
-      #ActiveRecord::Base.logger = Logger.new(STDOUT) if defined?(ActiveRecord::Base)
       records=records.gsub(/,$/, '')
       ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
     end
@@ -72,8 +71,6 @@ describe "AwesomeNestedSet" do
         printer = ExcelPrinter::FlatExcelPrinter.new(result)
         printer.print('tmp/report_get_roots_wall_time.xls')
       end
-
-
     end
   end
 end

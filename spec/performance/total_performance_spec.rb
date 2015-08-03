@@ -11,7 +11,7 @@ describe "AwesomeNestedSet" do
 
   describe "process time" do
 
-    xit "It takes time to build nodes inline" do
+    it "It takes time to build nodes inline" do
       [200, 1000, 10000, 100000].each do |tempN|#200, 1000, 10000, 100000
 
 
@@ -423,7 +423,7 @@ describe "AwesomeNestedSet" do
 
     end
 
-    xit "It takes time to build full binary tree" do
+    it "It takes time to build full binary tree" do
       [255, 1023, 8191].each do |tempN| #255, 1023, 8191, 65535, 131071, 1048575
 
 
@@ -630,9 +630,6 @@ describe "AwesomeNestedSet" do
         end
 
       end
-
-
-
     end
   end
 end

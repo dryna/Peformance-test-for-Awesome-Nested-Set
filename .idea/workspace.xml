@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7c9b7c-4462-4fdb-a734-8b55fc56c919" name="Default" comment="changes in">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/perfTests.sh" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/full_binary_tree_all_times_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_1000000_in_line_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/nodes_in_line_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/nodes_in_line_fast_seed_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/full_binary_tree_fast_seed_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/full_binary_tree_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/one_root_rest_children_fast_seed_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/one_root_rest_children_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb" afterPath="$PROJECT_DIR$/spec/performance/nodes_in_line_all_times_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/awesome_nested_set.iml" afterPath="$PROJECT_DIR$/.idea/awesome_nested_set.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" afterPath="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" afterPath="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -18,27 +29,30 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_spec': awesome_nested_set Coverage Results" MODIFIED="1437631121170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_read_whole_tree__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to read whole tree: awesome_nested_set Coverage Results" MODIFIED="1436178810438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_is_or_is_ancestor_of_with_scope__awesome_nested_set.coverage" NAME="AwesomeNestedSet is_or_is_ancestor_of_with_scope: awesome_nested_set Coverage Results" MODIFIED="1435816043540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_spec___awesome_nested_set__1_.coverage" NAME="Run spec 'awesome_nested_set_spec': awesome_nested_set (1) Coverage Results" MODIFIED="1436856111896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_multi_scoped_rebuild__awesome_nested_set.coverage" NAME="AwesomeNestedSet multi_scoped_rebuild: awesome_nested_set Coverage Results" MODIFIED="1435824584774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_spec': awesome_nested_set Coverage Results" MODIFIED="1436352939423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_read_ancestors__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to read ancestors: awesome_nested_set Coverage Results" MODIFIED="1436181651357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_build_200_nodes_inline_as_children__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to build 200 nodes inline as_children: awesome_nested_set Coverage Results" MODIFIED="1436190894227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_one_root_rest_children_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_one_root_rest_children_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437395911736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@All_specs_in_spec__awesome_nested_set.coverage" NAME="All specs in spec: awesome_nested_set Coverage Results" MODIFIED="1435645161182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_counter_cache_should_increment_the_counter_cache_on_create__awesome_nested_set.coverage" NAME="AwesomeNestedSet counter_cache should increment the counter cache on create: awesome_nested_set Coverage Results" MODIFIED="1435817528150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_remove_200_nodes_inline_from_bottom__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to remove 200 nodes inline from bottom: awesome_nested_set Coverage Results" MODIFIED="1436176970017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_moving_node_from_one_scoped_tree_to_another_moves_single_node_correctly__awesome_nested_set.coverage" NAME="AwesomeNestedSet moving node from one scoped tree to another moves single node correctly: awesome_nested_set Coverage Results" MODIFIED="1436163895927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__nodes_in_line_all_times_spec___awesome_nested_set.coverage" NAME="Run spec 'nodes_in_line_all_times_spec': awesome_nested_set Coverage Results" MODIFIED="1438587714550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_Takes_time_to_move_to_child_more_than_once_per_parent_rebuild__awesome_nested_set.coverage" NAME="AwesomeNestedSet Takes time to move_to_child_more_than_once_per_parent_rebuild: awesome_nested_set Coverage Results" MODIFIED="1436174207299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_one_root_rest_children_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set Coverage Results" MODIFIED="1437631053116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437641227259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_full_binary_tree_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_full_binary_tree_spec': awesome_nested_set Coverage Results" MODIFIED="1436538949801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
-    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_build_200_nodes_inline__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to build 200 nodes inline: awesome_nested_set Coverage Results" MODIFIED="1436176131041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_get_roots__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to get roots: awesome_nested_set Coverage Results" MODIFIED="1436182815946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__users_spec___awesome_nested_set.coverage" NAME="Run spec 'users_spec': awesome_nested_set Coverage Results" MODIFIED="1435760059104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_1000000_in_line_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_1000000_in_line_spec': awesome_nested_set Coverage Results" MODIFIED="1436855293613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__full_binary_tree_all_times_spec___awesome_nested_set.coverage" NAME="Run spec 'full_binary_tree_all_times_spec': awesome_nested_set Coverage Results" MODIFIED="1438588257298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_spec': awesome_nested_set Coverage Results" MODIFIED="1437631121170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_spec___awesome_nested_set__1_.coverage" NAME="Run spec 'awesome_nested_set_spec': awesome_nested_set (1) Coverage Results" MODIFIED="1436856111896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_spec': awesome_nested_set Coverage Results" MODIFIED="1436352939423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_read_ancestors__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to read ancestors: awesome_nested_set Coverage Results" MODIFIED="1436181651357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@nodes_in_line_all_times.coverage" NAME="nodes_in_line_all_times Coverage Results" MODIFIED="1438587592714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec/performance" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@All_specs_in_spec__awesome_nested_set.coverage" NAME="All specs in spec: awesome_nested_set Coverage Results" MODIFIED="1435645161182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_one_root_rest_children_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_one_root_rest_children_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437395911736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_remove_200_nodes_inline_from_bottom__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to remove 200 nodes inline from bottom: awesome_nested_set Coverage Results" MODIFIED="1436176970017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_full_binary_tree_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437641227259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_one_root_rest_children_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set Coverage Results" MODIFIED="1438587668663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
+    <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_It_takes_time_to_build_200_nodes_inline__awesome_nested_set.coverage" NAME="AwesomeNestedSet It takes time to build 200 nodes inline: awesome_nested_set Coverage Results" MODIFIED="1436176131041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@AwesomeNestedSet_moving_node_from_one_scoped_tree_to_another__awesome_nested_set.coverage" NAME="AwesomeNestedSet moving node from one scoped tree to another: awesome_nested_set Coverage Results" MODIFIED="1435817603149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
     <SUITE FILE_PATH="coverage/awesome_nested_set@Run_spec__awesome_nested_set_100000_in_line_fast_seed_spec___awesome_nested_set.coverage" NAME="Run spec 'awesome_nested_set_100000_in_line_fast_seed_spec': awesome_nested_set Coverage Results" MODIFIED="1437395870814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_nested_set" />
   </component>
@@ -54,101 +68,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="awesome_nested_set_full_binary_tree_fast_seed_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1710">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="awesome_255_full_binary_tree_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="7002">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="flat_excel_printer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2196">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customize_flat_excel_printer.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.066439524" vertical-offset="3309" max-vertical-offset="4212">
+              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize_flat_excel_printer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9616027" vertical-offset="0" max-vertical-offset="2268">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2070">
+              <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_100000_in_line_fast_seed_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb">
+      <file leaf-file-name="nodes_in_line_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1620">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1548">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_1000000_in_line_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_1000000_in_line_spec.rb">
+      <file leaf-file-name="nodes_in_line_fast_seed_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_fast_seed_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1602">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1584">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_full_binary_tree_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb">
+      <file leaf-file-name="one_root_rest_children_fast_seed_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/one_root_rest_children_fast_seed_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1656">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1476">
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_one_root_rest_children_fast_seed_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb">
+      <file leaf-file-name="full_binary_tree_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/full_binary_tree_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1530">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1638">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_one_root_rest_children_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb">
+      <file leaf-file-name="nodes_in_line_all_times_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_all_times_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1602">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6162" max-vertical-offset="6768">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_nested_set_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb">
+      <file leaf-file-name="one_root_rest_children_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/one_root_rest_children_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="7992">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1566">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="total_performance_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/performance/total_performance_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11592">
+              <caret line="606" column="36" selection-start-line="606" selection-start-column="21" selection-end-line="606" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -170,16 +184,24 @@
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_full_binary_tree_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/total_performance_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_1000000_in_line_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb" />
         <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/nodes_in_line_all_times.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/nodes_in_line_all_times_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/nodes_in_line_fast_seed_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/one_root_rest_children_fast_seed_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/one_root_rest_children_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/full_binary_tree_all_times_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/performance/nodes_in_line_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb" />
+        <option value="$PROJECT_DIR$/spec/support/flat_excel_printer.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -188,9 +210,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1985" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -443,79 +465,7 @@
       <recent name="$PROJECT_DIR$/spec/performance" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set">
-    <configuration default="false" name="Run spec 'awesome_nested_set_100000_in_line_fast_seed_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="awesome_nested_set" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Run spec 'awesome_nested_set_one_root_rest_children_fast_seed_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="awesome_nested_set" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Run spec 'full_binary_tree_all_times_spec': awesome_nested_set">
     <configuration default="false" name="Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="awesome_nested_set" />
@@ -536,7 +486,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/one_root_rest_children_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -552,42 +502,6 @@
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Run spec 'awesome_nested_set_full_binary_tree_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="awesome_nested_set" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
@@ -610,7 +524,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/full_binary_tree_fast_seed_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -624,6 +538,100 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nodes_in_line_all_times_spec" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="awesome_nested_set" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/spec/performance" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/nodes_in_line_all_times_spec.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run spec 'nodes_in_line_all_times_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="awesome_nested_set" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/nodes_in_line_all_times_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run spec 'full_binary_tree_all_times_spec': awesome_nested_set" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="awesome_nested_set" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance/full_binary_tree_all_times_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -719,19 +727,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_100000_in_line_fast_seed_spec': awesome_nested_set" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_one_root_rest_children_fast_seed_spec': awesome_nested_set" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_spec': awesome_nested_set" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.nodes_in_line_all_times_spec" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'nodes_in_line_all_times_spec': awesome_nested_set" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'full_binary_tree_all_times_spec': awesome_nested_set" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_spec': awesome_nested_set" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'full_binary_tree_all_times_spec': awesome_nested_set" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'nodes_in_line_all_times_spec': awesome_nested_set" />
         <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_one_root_rest_children_spec': awesome_nested_set" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_one_root_rest_children_fast_seed_spec': awesome_nested_set" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_100000_in_line_fast_seed_spec': awesome_nested_set" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.nodes_in_line_all_times_spec" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'awesome_nested_set_full_binary_tree_fast_seed_spec': awesome_nested_set" />
       </list>
     </recent_temporary>
   </component>
@@ -769,29 +777,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3434238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3434238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31941545" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.434238" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5273632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2570481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3361169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31941545" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.434238" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3361169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -817,15 +825,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1530">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/one_root_rest_children_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1602">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
@@ -833,7 +833,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_all_times_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="7992">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
@@ -1073,19 +1073,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.8125" vertical-offset="1750" max-vertical-offset="2646">
-          <caret line="120" column="6" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="6" />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/total_performance_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.5" vertical-offset="0" max-vertical-offset="11592">
-          <caret line="231" column="63" selection-start-line="231" selection-start-column="63" selection-end-line="231" selection-end-column="63" />
+        <state vertical-scroll-proportion="-12.8125" vertical-offset="1750" max-vertical-offset="2646">
+          <caret line="120" column="6" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1103,89 +1096,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perfTests.sh">
+    <entry file="file://$PROJECT_DIR$/tmp/flat_data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state vertical-scroll-proportion="-48.87047" vertical-offset="28296" max-vertical-offset="142596">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_100000_in_line_fast_seed_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_1000000_in_line_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/full_binary_tree_all_times_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1602">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5994">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_fast_seed_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/full_binary_tree_fast_seed_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1710">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_fast_seed_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/full_binary_tree_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1530">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="710" max-vertical-offset="1638">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_all_times_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7992">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6768">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_one_root_rest_children_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_fast_seed_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="1602">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1584">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_nested_set_full_binary_tree_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/nodes_in_line_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1548">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance/awesome_255_full_binary_tree_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/one_root_rest_children_fast_seed_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="7002">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="1476">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
+    <entry file="file://$PROJECT_DIR$/spec/performance/total_performance_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2196">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11592">
+          <caret line="606" column="36" selection-start-line="606" selection-start-column="21" selection-end-line="606" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/customize_flat_excel_printer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9616027" vertical-offset="0" max-vertical-offset="2268">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2070">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/flat_excel_printer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/performance/one_root_rest_children_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="1566">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.066439524" vertical-offset="3309" max-vertical-offset="4212">
+          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
           <folding />
         </state>
       </provider>

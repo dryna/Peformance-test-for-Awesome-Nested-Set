@@ -7,16 +7,12 @@ require 'spreadsheet'
 require 'support/flat_excel_printer'
 
 describe "AwesomeNestedSet" do
-  before(:all) do
-    self.class.fixtures :departments, :notes, :things, :brokens, :users, :default_scoped_models
-  end
-
   before(:each) do
-    @n = 255
+    @n = 255 #255 1023 8191 65535 131071 1048575
     @test_nodes = []
     z= 2
     @test_nodes[1] = Category.create(:name => 'Root1')
-    (1..((@n/2)-1)).to_a.each do |i|
+    (1..(@n/2)).to_a.each do |i|
       @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
       @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
       z+=2
@@ -33,7 +29,7 @@ describe "AwesomeNestedSet" do
       result=RubyProf.profile do
         z= 2
         @test_nodes[1] = Category.create(:name => 'Root1')
-        (1..127).to_a.each do |i|
+        (1..(@n/2)).to_a.each do |i|
           @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
           @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
           z+=2
@@ -42,18 +38,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_add_ancestor.xls')
 
-      z= 2
-      (1..127).to_a.each do |i|
-        expect(@test_nodes[z].parent_id).to eq @test_nodes[i].primary_id
-        expect(@test_nodes[z+1].parent_id).to eq @test_nodes[i].primary_id
-        z+=2
-      end
     end
 
     it "It takes time to remove 255 nodes inline from bottom" do
 
       result=RubyProf.profile do
-        (2..255).to_a.reverse.each do |i|
+        (2..@n).to_a.reverse.each do |i|
           @test_nodes[i].destroy
         end
       end
@@ -61,15 +51,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_remove_from_bottom.xls')
 
-      @test_nodes[1].reload
-      # printer.print(STDOUT, :min_percent => 3)
-      expect(@test_nodes[1].children).to eq []
     end
 
     it "It takes time to read ancestors" do
 
       result=RubyProf.profile do
-        @test_nodes[255].ancestors
+        @test_nodes[@n].ancestors
       end
 
 
@@ -104,7 +91,7 @@ describe "AwesomeNestedSet" do
       result=RubyProf.profile do
         z= 2
         @test_nodes[1] = Category.create(:name => 'Root1')
-        (1..127).to_a.each do |i|
+        (1..(@n/2)).to_a.each do |i|
           @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
           @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
           z+=2
@@ -114,19 +101,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_add_ancestor_process_time.xls')
 
-
-      z= 2
-      (1..127).to_a.each do |i|
-        expect(@test_nodes[z].parent_id).to eq @test_nodes[i].primary_id
-        expect(@test_nodes[z+1].parent_id).to eq @test_nodes[i].primary_id
-        z+=2
-      end
     end
 
     it "It takes time to remove 255 nodes inline from bottom" do
 
       result=RubyProf.profile do
-        (2..255).to_a.reverse.each do |i|
+        (2..@n).to_a.reverse.each do |i|
           @test_nodes[i].destroy
         end
       end
@@ -141,7 +121,7 @@ describe "AwesomeNestedSet" do
     it "It takes time to read ancestors" do
 
       result=RubyProf.profile do
-        @test_nodes[255].ancestors
+        @test_nodes[@n].ancestors
       end
 
 
@@ -176,7 +156,7 @@ describe "AwesomeNestedSet" do
       result=RubyProf.profile do
         z= 2
         @test_nodes[1] = Category.create(:name => 'Root1')
-        (1..127).to_a.each do |i|
+        (1..(@n/2)).to_a.each do |i|
           @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
           @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
           z+=2
@@ -186,19 +166,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_add_ancestor_cpu_time.xls')
 
-
-      z= 2
-      (1..127).to_a.each do |i|
-        expect(@test_nodes[z].parent_id).to eq @test_nodes[i].primary_id
-        expect(@test_nodes[z+1].parent_id).to eq @test_nodes[i].primary_id
-        z+=2
-      end
     end
 
     it "It takes time to remove 255 nodes inline from bottom" do
 
       result=RubyProf.profile do
-        (2..255).to_a.reverse.each do |i|
+        (2..@n).to_a.reverse.each do |i|
           @test_nodes[i].destroy
         end
       end
@@ -206,15 +179,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_remove_from_bottom_cpu_time.xls')
 
-      @test_nodes[1].reload
-      # printer.print(STDOUT, :min_percent => 3)
-      expect(@test_nodes[1].children).to eq []
     end
 
     it "It takes time to read ancestors" do
 
       result=RubyProf.profile do
-        @test_nodes[255].ancestors
+        @test_nodes[@n].ancestors
       end
 
 
@@ -232,9 +202,6 @@ describe "AwesomeNestedSet" do
 
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_get_roots_cpu_time.xls')
-
-      @test_nodes[1].reload
-      expect(Category.root).to eq @test_nodes[1]
     end
   end
 
@@ -248,7 +215,7 @@ describe "AwesomeNestedSet" do
       result=RubyProf.profile do
         z= 2
         @test_nodes[1] = Category.create(:name => 'Root1')
-        (1..127).to_a.each do |i|
+        (1..(@n/2)).to_a.each do |i|
           @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
           @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
           z+=2
@@ -258,18 +225,11 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_add_ancestor_allocations.xls')
 
-
-      z= 2
-      (1..127).to_a.each do |i|
-        expect(@test_nodes[z].parent_id).to eq @test_nodes[i].primary_id
-        expect(@test_nodes[z+1].parent_id).to eq @test_nodes[i].primary_id
-        z+=2
-      end
     end
 
     it "It takes time to remove 255 nodes inline from bottom" do
       result=RubyProf.profile do
-        (2..255).to_a.reverse.each do |i|
+        (2..@n).to_a.reverse.each do |i|
           @test_nodes[i].destroy
         end
       end
@@ -277,15 +237,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_remove_from_bottom_allocations.xls')
 
-      @test_nodes[1].reload
-      # printer.print(STDOUT, :min_percent => 3)
-      expect(@test_nodes[1].children).to eq []
     end
 
     it "It takes time to read ancestors" do
 
       result=RubyProf.profile do
-        @test_nodes[255].ancestors
+        @test_nodes[@n].ancestors
       end
 
 
@@ -319,7 +276,7 @@ describe "AwesomeNestedSet" do
       result=RubyProf.profile do
         z= 2
         @test_nodes[1] = Category.create(:name => 'Root1')
-        (1..127).to_a.each do |i|
+        (1..(@n/2)).to_a.each do |i|
           @test_nodes[z]= @test_nodes[i].children.create(:name => "Root#{z}")
           @test_nodes[z+1]=@test_nodes[i].children.create(:name => "Root#{z+1}")
           z+=2
@@ -329,19 +286,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_add_ancestor_memory.xls')
 
-
-      z= 2
-      (1..127).to_a.each do |i|
-        expect(@test_nodes[z].parent_id).to eq @test_nodes[i].primary_id
-        expect(@test_nodes[z+1].parent_id).to eq @test_nodes[i].primary_id
-        z+=2
-      end
     end
 
     it "It takes time to remove 255 nodes inline from bottom" do
 
       result=RubyProf.profile do
-        (2..255).to_a.reverse.each do |i|
+        (2..@n).to_a.reverse.each do |i|
           @test_nodes[i].destroy
         end
       end
@@ -349,14 +299,12 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_remove_from_bottom_memory.xls')
 
-      @test_nodes[1].reload
-      expect(@test_nodes[1].children).to eq []
     end
 
     it "It takes time to read ancestors" do
 
       result=RubyProf.profile do
-        @test_nodes[255].ancestors
+        @test_nodes[@n].ancestors
       end
 
 
@@ -374,10 +322,6 @@ describe "AwesomeNestedSet" do
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
       printer.print('tmp/report_get_roots_memory.xls')
 
-      @test_nodes[1].reload
-      expect(Category.root).to eq @test_nodes[1]
     end
   end
-
-
 end

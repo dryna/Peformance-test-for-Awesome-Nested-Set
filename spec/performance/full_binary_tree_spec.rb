@@ -12,7 +12,7 @@ describe "AwesomeNestedSet" do
     before(:each) do
       RubyProf.measure_mode = RubyProf::PROCESS_TIME
       @test_nodes = []
-      @n = 100000
+      @n = 8191 #255 1023 8191 65535 131071 1048575
       Category.delete_all
       (1..@n).to_a.each do |i|
         @test_nodes[i] = Category.create(id: i, name: "name#{i}")
@@ -20,14 +20,16 @@ describe "AwesomeNestedSet" do
       end
     end
 
-    it "It takes time" do
+    it "It takes time to build 200 nodes inline as_children" do
       RubyProf.measure_mode = RubyProf::WALL_TIME
+      z= 2
       result=RubyProf.profile do
-        (2..@n).to_a.each do |i|
-          @test_nodes[i].move_to_child_of(@test_nodes[1])
+        (1..((@n/2))).to_a.each do |i|
+          @test_nodes[z].move_to_child_of(@test_nodes[i])
+          @test_nodes[z+1].move_to_child_of(@test_nodes[i])
+          z+=2
         end
       end
-
 
 
       printer = ExcelPrinter::FlatExcelPrinter.new(result)

@@ -12,7 +12,7 @@ describe "AwesomeNestedSet" do
     before(:each) do
       RubyProf.measure_mode = RubyProf::PROCESS_TIME
       @test_nodes = []
-      @n = 10000
+      @n = 1000
       Category.delete_all
       (1..@n).to_a.each do |i|
         @test_nodes[i] = Category.create(id: i, name: "name#{i}")
@@ -20,14 +20,14 @@ describe "AwesomeNestedSet" do
       end
     end
 
-    it "It takes time to build 200 nodes inline as_children" do
+    it "It takes time" do
       RubyProf.measure_mode = RubyProf::WALL_TIME
-      ActiveRecord::Base.logger = Logger.new(STDOUT) if defined?(ActiveRecord::Base)
       result=RubyProf.profile do
         (2..@n).to_a.each do |i|
-          @test_nodes[i].move_to_child_of(@test_nodes[i-1])
+          @test_nodes[i].move_to_child_of(@test_nodes[1])
         end
       end
+
 
 
       printer = ExcelPrinter::FlatExcelPrinter.new(result)
@@ -76,8 +76,6 @@ describe "AwesomeNestedSet" do
         printer = ExcelPrinter::FlatExcelPrinter.new(result)
         printer.print('tmp/report_get_roots_wall_time.xls')
       end
-
-
     end
   end
 end

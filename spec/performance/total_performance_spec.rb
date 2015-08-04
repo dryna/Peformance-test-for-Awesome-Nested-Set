@@ -12,7 +12,7 @@ describe "AwesomeNestedSet" do
   describe "process time" do
 
     it "It takes time to build nodes inline" do
-      [200, 1000, 10000, 100000].each do |tempN|#200, 1000, 10000, 100000
+      [200, 1000, 10000].each do |tempN|#200, 1000, 10000, 100000
 
 
         Category.delete_all
@@ -36,7 +36,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@n)
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -48,7 +48,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'get_roots_process_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -59,7 +59,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_descendants_process_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -71,7 +71,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_ancestors_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -83,7 +83,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_descendants_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 
@@ -127,7 +127,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_ancestors_wall_time'
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -139,7 +139,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'get_roots_wall_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -150,7 +150,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_descendants_wall_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -162,7 +162,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_ancestors_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -174,7 +174,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' nodes in line ' +'read_descendants_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 
@@ -241,7 +241,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@n)
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -253,7 +253,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'get_roots_process_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -264,7 +264,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_descendants_process_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -276,7 +276,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_ancestors_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -288,7 +288,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_descendants_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 
@@ -332,7 +332,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_ancestors_wall_time'
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -344,7 +344,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'get_roots_wall_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -355,7 +355,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_descendants_wall_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -367,7 +367,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_ancestors_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -379,7 +379,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' one root rest children ' +'read_descendants_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 
@@ -455,7 +455,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@n)
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -467,7 +467,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'get_roots_process_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -478,7 +478,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_descendants_process_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -490,7 +490,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_ancestors_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -502,7 +502,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_descendants_from_middle_process_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 
@@ -545,7 +545,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_ancestors_wall_time'
         10.times do
           result=RubyProf.profile do
-            last_node.ancestors
+            last_node.ancestors.inspect
           end
 
 
@@ -557,7 +557,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'get_roots_wall_time'
         10.times do
           result=RubyProf.profile do
-            Category.root
+            Category.root.inspect
           end
 
           printer = ExcelPrinter::CustomizeFlatExcelPrinter.new(result)
@@ -568,7 +568,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_descendants_wall_time'
         10.times do
           result=RubyProf.profile do
-            first_node.descendants
+            first_node.descendants.inspect
           end
 
 
@@ -580,7 +580,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_ancestors_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.ancestors
+            middle_node.ancestors.inspect
           end
 
 
@@ -592,7 +592,7 @@ describe "AwesomeNestedSet" do
         name = @n.to_s + ' full binary tree ' +'read_descendants_from_middle_wall_time'
         10.times do
           result=RubyProf.profile do
-            middle_node.descendants
+            middle_node.descendants.inspect
           end
 
 

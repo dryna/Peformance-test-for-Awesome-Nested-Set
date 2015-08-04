@@ -28,7 +28,7 @@ module ExcelPrinter
       rescue StandardError
         workbook = Spreadsheet::Workbook.new
         print_threads(workbook)
-e.
+
         path = output.respond_to?(:path) ? output.path : output.to_s
         workbook.write path
       end

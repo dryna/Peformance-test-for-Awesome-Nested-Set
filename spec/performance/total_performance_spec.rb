@@ -32,6 +32,8 @@ describe "AwesomeNestedSet" do
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
 
+        RubyProf.measure_mode = RubyProf::PROCESS_TIME
+
         name = @n.to_s + ' nodes in line ' +'read_ancestors_process_time'
         last_node = Category.find_by_id(@n)
         10.times do
@@ -213,9 +215,6 @@ describe "AwesomeNestedSet" do
         end
 
       end
-
-
-
     end
 
     it "It takes time to build one root rest children" do
@@ -236,6 +235,8 @@ describe "AwesomeNestedSet" do
 
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
+
+        RubyProf.measure_mode = RubyProf::PROCESS_TIME
 
         name = @n.to_s + ' one root rest children ' +'read_ancestors_process_time'
         last_node = Category.find_by_id(@n)
@@ -451,6 +452,8 @@ describe "AwesomeNestedSet" do
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
 
+        RubyProf.measure_mode = RubyProf::PROCESS_TIME
+
         name = @n.to_s + ' full binary tree ' +'read_ancestors_process_time'
         last_node = Category.find_by_id(@n)
         10.times do
@@ -628,7 +631,6 @@ describe "AwesomeNestedSet" do
           printer.print('tmp/report_awesome_total_test.xls',name)
           name = 'false'
         end
-
       end
     end
   end

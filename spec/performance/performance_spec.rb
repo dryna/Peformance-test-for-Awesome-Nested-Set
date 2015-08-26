@@ -383,6 +383,7 @@ describe "AwesomeNestedSet" do
           end
           Category.find_by_id(@graph_size/2).children.create(id: @graph_size, name: "name#{@graph_size}")
           last_node = Category.find_by_id(@graph_size)
+          @results << result
         end
       end
 

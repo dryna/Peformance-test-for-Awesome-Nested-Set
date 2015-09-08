@@ -18,9 +18,9 @@ describe "AwesomeNestedSet" do
     end
   end
 
-  @nodes_in_line_counters = [10, 20]
-  @one_root_rest_children_counters = [10]
-  @binary_tree_counters = [15]
+  @nodes_in_line_counters = [200]
+  @one_root_rest_children_counters = [200]
+  @binary_tree_counters = [255, 1023]
 
   @nodes_in_line_counters.each do |counter|
     describe 'Nodes in line:' do
@@ -53,6 +53,16 @@ describe "AwesomeNestedSet" do
       it 'Add descendants' do
         p "adding descendants for (#{@graph_size})..."
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
+        test_nodes = []
+        Category.all.each do |i|
+          test_nodes << i
+        end
+        result = RubyProf.profile do
+          (1..@graph_size).each do |i|
+            test_nodes[i].move_to_child_of(test_nodes[i-1])
+          end
+        end
+        @results << result
       end
 
       it 'Read ancestors' do
@@ -172,6 +182,16 @@ describe "AwesomeNestedSet" do
       it 'Add descendants' do
         p "adding descendants for (#{@graph_size})..."
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
+        test_nodes = []
+        Category.all.each do |i|
+          test_nodes << i
+        end
+        result = RubyProf.profile do
+          (1..@graph_size).each do |i|
+            test_nodes[i].move_to_child_of(test_nodes[0])
+          end
+        end
+        @results << result
       end
 
       it 'Read ancestors' do
@@ -299,6 +319,21 @@ describe "AwesomeNestedSet" do
       it 'Add descendants' do
         p "adding descendants for (#{@graph_size})..."
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
+        test_nodes = []
+        Category.all.each do |i|
+          test_nodes << i
+        end
+        z = 1
+        result=RubyProf.profile do
+          (1..(@graph_size / 2)).each do |i|
+            test_nodes[z].move_to_child_of(test_nodes[i - 1])
+            test_nodes[z + 1].move_to_child_of(test_nodes[i - 1])
+            z += 2
+          end
+        end
+
+
+        @results << result
       end
 
       it 'Read ancestors' do

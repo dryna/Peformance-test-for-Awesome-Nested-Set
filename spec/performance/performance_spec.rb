@@ -18,16 +18,18 @@ describe "AwesomeNestedSet" do
     end
   end
 
-  @nodes_in_line_counters = [200]
-  @one_root_rest_children_counters = [200]
-  @binary_tree_counters = [255, 1023]
+  @nodes_in_line_counters = [10, 100, 1000, 2000]
+  @one_root_rest_children_counters = [10, 100, 1000, 2000]
+  @binary_tree_counters = [16, 127, 1023, 2047]
 
   @nodes_in_line_counters.each do |counter|
     describe 'Nodes in line:' do
       before(:all) do
+        p Time.now
         Category.delete_all
         @graph_size = counter
         @results = []
+        p '----------', self.class.description + " creating graph nodes (#{@graph_size})..."
         left = 0
         right = 2 * @graph_size + 1
         records =""
@@ -41,8 +43,8 @@ describe "AwesomeNestedSet" do
         end
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
+        records = nil
         RubyProf.measure_mode = RubyProf::WALL_TIME
-        last_node = Category.find_by_id(@graph_size)
       end
 
       after(:each) do
@@ -71,7 +73,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@graph_size)
         10.times do
           result = RubyProf.profile do
-            last_node.ancestors.inspect
+            last_node.ancestors
           end
           @results << result
         end
@@ -82,7 +84,7 @@ describe "AwesomeNestedSet" do
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
         10.times do
           result = RubyProf.profile do
-            Category.root.inspect
+            Category.root
           end
           @results << result
         end
@@ -94,7 +96,7 @@ describe "AwesomeNestedSet" do
         first_node = Category.find_by_id(1)
         10.times do
           result = RubyProf.profile do
-            first_node.descendants.inspect
+            first_node.descendants
           end
           @results << result
         end
@@ -106,7 +108,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.ancestors.inspect
+            middle_node.ancestors
           end
           @results << result
         end
@@ -118,7 +120,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.descendants.inspect
+            middle_node.descendants
           end
           @results << result
         end
@@ -160,6 +162,7 @@ describe "AwesomeNestedSet" do
         Category.delete_all
         @results = []
         @graph_size = counter
+        p '----------', self.class.description + " creating graph nodes (#{@graph_size})..."
         left = 0
         records = ""
         records += "(#{1}, 'name#{1}',null,#{left},#{@graph_size + 2}),"
@@ -171,6 +174,7 @@ describe "AwesomeNestedSet" do
 
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
+        records = nil
         RubyProf.measure_mode = RubyProf::WALL_TIME
       end
 
@@ -200,7 +204,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@graph_size)
         10.times do
           result = RubyProf.profile do
-            last_node.ancestors.inspect
+            last_node.ancestors
           end
           @results << result
         end
@@ -211,7 +215,7 @@ describe "AwesomeNestedSet" do
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
         10.times do
           result = RubyProf.profile do
-            Category.root.inspect
+            Category.root
           end
           @results << result
         end
@@ -223,7 +227,7 @@ describe "AwesomeNestedSet" do
         first_node = Category.find_by_id(1)
         10.times do
           result = RubyProf.profile do
-            first_node.descendants.inspect
+            first_node.descendants
           end
           @results << result
         end
@@ -235,7 +239,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.ancestors.inspect
+            middle_node.ancestors
           end
           @results << result
         end
@@ -247,7 +251,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.descendants.inspect
+            middle_node.descendants
           end
           @results << result
         end
@@ -287,9 +291,9 @@ describe "AwesomeNestedSet" do
       before(:all) do
         @results = []
         Category.delete_all
-
         @test_nodes = []
         @graph_size = counter
+        p '----------', self.class.description + " creating graph nodes (#{@graph_size})..."
         (1..@graph_size).each do |i|
           @test_nodes[i]={lft: 0, rgt: 3 * @graph_size}
         end
@@ -303,11 +307,12 @@ describe "AwesomeNestedSet" do
           @test_nodes[z][:rgt]= @test_nodes[i][:lft] + 1 + dif
           records+="(#{z + 1}, 'name#{z + 1}',#{i},#{@test_nodes[z][:rgt] + 1},#{@test_nodes[i][:rgt] - 1}),"
           @test_nodes[z + 1][:lft] = @test_nodes[z][:rgt] + 1
-          @test_nodes[z + 1][:rgt] =@test_nodes[i][:rgt] - 1
+          @test_nodes[z + 1][:rgt] = @test_nodes[i][:rgt] - 1
           z+=2
         end
         records=records.gsub(/,$/, '')
         ActiveRecord::Base.connection.execute("INSERT INTO categories (id, name, parent_id, lft, rgt) VALUES #{records}")
+        @test_nodes = nil
         RubyProf.measure_mode = RubyProf::WALL_TIME
       end
 
@@ -324,15 +329,13 @@ describe "AwesomeNestedSet" do
           test_nodes << i
         end
         z = 1
-        result=RubyProf.profile do
+        result = RubyProf.profile do
           (1..(@graph_size / 2)).each do |i|
             test_nodes[z].move_to_child_of(test_nodes[i - 1])
             test_nodes[z + 1].move_to_child_of(test_nodes[i - 1])
             z += 2
           end
         end
-
-
         @results << result
       end
 
@@ -342,7 +345,7 @@ describe "AwesomeNestedSet" do
         last_node = Category.find_by_id(@graph_size)
         10.times do
           result = RubyProf.profile do
-            last_node.ancestors.inspect
+            last_node.ancestors
           end
           @results << result
         end
@@ -353,7 +356,7 @@ describe "AwesomeNestedSet" do
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
         10.times do
           result = RubyProf.profile do
-            Category.root.inspect
+            Category.root
           end
           @results << result
         end
@@ -365,7 +368,7 @@ describe "AwesomeNestedSet" do
         first_node = Category.find_by_id(1)
         10.times do
           result = RubyProf.profile do
-            first_node.descendants.inspect
+            first_node.descendants
           end
           @results << result
         end
@@ -377,7 +380,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.ancestors.inspect
+            middle_node.ancestors
           end
           @results << result
         end
@@ -389,7 +392,7 @@ describe "AwesomeNestedSet" do
         middle_node = Category.find_by_id(@graph_size/2)
         10.times do
           result = RubyProf.profile do
-            middle_node.descendants.inspect
+            middle_node.descendants
           end
           @results << result
         end
@@ -399,7 +402,7 @@ describe "AwesomeNestedSet" do
         p "getting tree roots for (#{@graph_size})..."
         @name = self.class.description + RSpec.current_example.description + '(' + @graph_size.to_s + ')'
         10.times do
-          result  =RubyProf.profile do
+          result = RubyProf.profile do
             Category.each_with_level(Category.root.self_and_descendants) do |o, level|
               t = {node: o, level: level}
             end

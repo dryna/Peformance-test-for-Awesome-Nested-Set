@@ -20,7 +20,7 @@ describe "AwesomeNestedSet" do
 
   @nodes_in_line_counters = [10, 100, 1000, 2000]
   @one_root_rest_children_counters = [10, 100, 1000, 2000]
-  @binary_tree_counters = [16, 127, 1023, 2047]
+  @binary_tree_counters = [15, 127, 1023, 2047]
 
   @nodes_in_line_counters.each do |counter|
     describe 'Nodes in line:' do
